@@ -204,7 +204,7 @@ class AccountServiceTest {
         Transfer transfer = new Transfer();
         transfer.setToAccountNumber(12346L);
         transfer.setFromAccountNumber(12347L);
-        transfer.setTransferAmount(10000L);
+        transfer.setTransferAmount(20000L);
         transfer.setMode("IMPS");
         ResponseEntity<?> responseEntity =  accountServiceImpl.transfer(transfer);
         if(responseEntity.getBody() instanceof ErrorResponse)
